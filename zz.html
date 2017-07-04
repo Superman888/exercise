@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script>
+		// var ss ="fg 123 21asq 123asd124  ewr123";
+
+		// // var re=/\d+/g; 
+		// //+ ==随机数 
+		// // g==global;
+
+		// var reg= /\s/g;
+
+		
+window.onload=function(){
+	var obtn=document.getElementById('btn');
+	var test=document.getElementById('test');
+
+	 obtn.onclick=function(){
+		// var reg=/^1(3|4|5|7|8)\d{9}$/; //验证手机号
+		var ree=/^(\w+)\@[0-9a-z]+\.[a-z]+$/; //验证邮箱
+
+		 if (ree.test(test.value)){
+		 	alert('ok');
+		 }else{
+		 	alert('no');
+		 }
+	 }
+}
+
+	</script>
+</head>
+<body>
+	<input type="text" id ="test">
+	<button id ='btn'>确定</button>
+</body>
+</html>
